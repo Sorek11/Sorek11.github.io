@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url(img/11012990_10152872053066662_266199087193079958_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-width: 100%;
+    max-width: 100%;
+    height: 99vh;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #DE744C;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+    position: sticky;
+    top: 0;
+}
+nav img {
+    width: 100px;
+    padding: 5px;
+    margin-left: 55px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+}
+
+.contenido-header{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    color: white;
+    margin-top: 3rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.contenido-header h1 {
+    font-size: 4rem;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+}
+
+.contenido-header h2 {
+    font-size: 2.5rem;
+    
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+}
+
+.contenido-header p{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    width: 70%;
+    text-align: center;
+}
+
+.contenido-header br {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+
+@media (max-width: 992px) { /*PANTALLAS DESDE TABLET HASTA PORTATIL*/
+    .header {
+        background-position: right;
+    }  
+    
+    .contenido-header{
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 70%;
+        color: white;
+        margin-top: 3rem;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    .contenido-header h1 {
+        font-size: 3rem;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+    }
+    
+    .contenido-header h2 {
+        font-size: 2rem;
+        
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+    }
+    
+    .contenido-header p{
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    
+}
+
+
+
+
+@media (max-width: 767px) { /*PANTALLAS DESDE MOVIL HASTA TABLET*/
+    .header {
+        background-position: right;
+    }
+
+    nav img {
+        width: 50px;
+        padding: 10px;
+        margin-left: 15%;
+    }
+    .contenido-header{
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: auto;
+        color: white;
+        margin-top: 0rem;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+    }
+    
+    nav ul {
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+    }
+    
+    .contenido-header h1 {
+        font-size: 3rem;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+    }
+    
+    .contenido-header h2 {
+        margin-top: -15px;
+        font-size: 2rem;
+        
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+    }
+    
+    .contenido-header p{
+        margin-top: -15px;
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    label {
+        position: absolute;
+        top: 10%;
+        left: 75%;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 0.5px solid white;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        color: white;
+        line-height: 50px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+
+      input:checked  ~ ul{
+        display:block;
+        top: 35px;
+      }
+    
+    
+}
