@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animacion.css">
 </head>
-<body>
+<body onresize="checkButtonsNecesity()">
     
-        <nav>
-            <a href="#"><img src="img/logo-b.png" alt=""></a>
+        <nav id="nav">
+            <a class="imagen-nav" href="#"><img src="img/logo-b.png" alt=""></a>
             <input type="checkbox" id="menu">
             <label for="menu"> ☰ </label>
             <ul>
@@ -27,17 +27,20 @@
         <div class="contenido-header">
                 <h1><span class="v">V</span><span class="i1">í</span><span class="c1">c</span><span class="t">t</span><span class="o">o</span><span class="r1">r</span><span class="g"> G</span><span class="a1">a</span><span class="r2">r</span><span class="c2">c</span><span class="i2">í</span><span class="a2">a</span></h1>
             <h2>Desarrollo Web</h2>
-            <p>Hola! Soy Víctor, experto en programación web, y en este espacio podrás conocer un poco 
+            <hr>
+            <p>Hola! Soy Víctor, experto en <b>programación web</b>, y en este espacio podrás conocer un poco 
                 más sobre mí. </p>
             <button class="boton-header"><a href="#">Pongámonos en contacto!</a></button>
         </div>
     </header>
     <main>
         <div class="cv">
-            <h2>Curriculum</h2>
-            <div class="scroll-contenedor">
-                <div class="item-scroll">
+            <h2 class="heading-cv">Curriculum</h2>
+            
+            <div class="scroll-contenedor" id="seccion_scroleable">
+                <div class="item-scroll" id="main_tarjeta">
                     <h3>Datos Personales</h3>
+                    <hr>
                     <p><b>Edad: </b>30</p>
                     <p><b>Residencia: </b>Alcalá de Henares</p>
                     <p><b>Email: </b><a href="mailto: victor.garciag93@gmail.com">victor.garciag93@gmail.com</a> </p>
@@ -45,18 +48,25 @@
                 </div>
                 <div class="item-scroll">
                     <h3>Estudios</h3>
+                    <hr>
                     <p><b>CFGS Desarrollo de Aplicaciones Web </b> - Universidad Europea de Madrid <sub>(En curso)</sub> </p>
                     <p><b>Master en Management y Marketing</b> - Universidad de Alcalá</p>
                     <p><b>Grado en Administración y Dirección de Empresas</b> - Universidad de Alcalá</p>
                 </div>
                 <div class="item-scroll">
                     <h3>Experiencia</h3>
+                    <hr>
                     <p> <b>Especialista en Ecommerce</b> - Pantopolium SL (actual)</p>
                     <p> <b>Community Manager y Gestión Web</b> - Ayto. Alcalá de Henares (1 año)</p>
                     <p> <b>Técnico en Desarrollo Web, Publicidad y Community Manager</b> - Ayto. Alcalá de Henares (1 año)</p>
                 </div>
             </div>
             <div class="cuadrado-amarillo"></div>
+            <section class="botones">
+                <button class="scroll-button" onclick="scrollLeftNx()" id="bLess"><</button>
+                <button class="scroll-button" onclick="scrollRightNx()" id="bMore">></button>
+            </section>
+            
         </div>
     </main>
     <div>.</div>
@@ -95,6 +105,6 @@
     <div>.</div>
     <div>.</div>
     <div>.</div>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
