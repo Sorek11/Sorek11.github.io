@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 
 *::-webkit-scrollbar {
     width: 8px;
@@ -6,11 +7,11 @@
   }
 
 *::-webkit-scrollbar-track {
-    background: #cecece;
+    background: #171C22;
     border-radius: 5px;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: #DE744C;
+    background-color: #24a263;
     border-radius: 5px;
 }
 
@@ -22,34 +23,40 @@ body {
 }
 
 .header {
-    background-image: url(../img/11012990_10152872053066662_266199087193079958_n.jpg);
+    background-image: url(../img/banner.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     min-width: 100%;
     max-width: 100%;
-    height: 89vh;
-    margin-top: -50px;
+    height: 100vh;
+    margin-top: -95px;
 }
 
-nav {
+#nav {
     display: flex;
     width: 100%;
-    background-color: #DE744C;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
     position: sticky;
     top: 0;
     z-index: 150;
 }
-nav img {
+
+
+
+#nav img {
     width: 100px;
     padding: 5px;
     margin-left: 55px;
 }
 
+nav.green{
+    background: #24a263;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+}
 
-nav ul {
+
+#nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -75,7 +82,7 @@ ul a{
     justify-content: space-around;
     width: 70%;
     color: white;
-    margin-top: 3rem;
+    padding-top: 8rem;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -94,6 +101,8 @@ ul a{
 .contenido-header h2 {
     font-size: 2.5rem;
     margin-bottom: 0px;
+    margin-left: -0.5rem;
+    font-family: 'Mynerve', cursive;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
 }
 
@@ -108,6 +117,11 @@ ul a{
     display: none;
 }
 
+.contenido-header b{
+    color: #24a263;
+    text-decoration: underline;
+}
+
 label {
     display: none;
 }
@@ -117,7 +131,7 @@ input {
 }
 
 .boton-header {
-    background-color: #DEB13C;
+    background-color: #24a263;
     border: 0;
     padding: 15px;
     border-radius: 5px;
@@ -128,6 +142,7 @@ input {
     text-decoration: none;
     color: #171717;
     font-size: 1rem;
+    font-weight: 700;
 }
 
 .scroll-contenedor{
@@ -146,7 +161,7 @@ input {
 }
 
 .scroll-contenedor .item-scroll{
-    background-color: #BFD8D2;
+    background-color: #ffcc4a;
     flex: 0 0 95%;
     padding: 24px;
     border-radius: 8px;
@@ -155,18 +170,87 @@ input {
     z-index: 1;
 }
 
+.heading-cv{
+    
+    padding-left: 9rem;
+    position: relative;
+    top: 1rem;
+    z-index: 2;
+    font-size: 2.5rem;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
 .cuadrado-amarillo{
-    background-color: #DEB13C;
-    width: 200px;
+    background-color: #DE744C;
+    width: 300px;
     height: 200px;
     z-index: 0;
-    position: absolute;
-    top: 700px;
+    position: relative;
+    top: -29rem;
     left: 100px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
     border-radius: 8px;
 }
 
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*manda los botones al extremo de la pantalla*/
+    margin-top: -25rem;
+}
+
+.scroll-button {
+    position: relative;
+    
+    width: 10%;
+    padding: 0 7rem 0 5rem;
+    font-size: 4rem;
+    font-family: 'Barlow', sans-serif;
+    color: #24a263;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.item-scroll {
+    margin-top: -1rem;
+}
+
+.item-scroll h3{
+    margin-top: 0rem;
+    color: transparent;
+    -webkit-text-stroke: 0.1rem #DE744C;
+    font-weight: 1000;
+    font-size: 2rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.item-scroll p b{
+    font-weight: 700;
+    color: #171717;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+}
+
+.item-scroll p{
+    font-weight: 500;
+    color: #171717;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+}
+
+.item-scroll p a{
+    text-decoration: none;
+    color: #171717;
+}
+
+hr {
+    margin-top: -1rem;
+    background-color: #DE744C;
+    height: 0.2rem;
+    border: none;
+}
 
 
 @media (max-width: 992px) { /*PANTALLAS DESDE TABLET HASTA PORTATIL*/
@@ -205,7 +289,11 @@ input {
 
 }
 
-
+@media (max-width: 935px) { /*SOLO PARA LOS BOTONES DE DESPLAZAMIENTO DEL APARTADO CV*/
+    .scroll-button {
+        padding: 0 5rem 0 5rem;
+    }
+}
 
 
 @media (max-width: 767px) { /*PANTALLAS DESDE MOVIL HASTA TABLET*/
@@ -288,8 +376,9 @@ input {
       .scroll-contenedor{
         display: flex;
         overflow-x: scroll;
+        overflow-y: hidden;
         padding: 24px;
-        width: 300px;
+        width: 75%;
         height: 360px;
         scroll-snap-type: x mandatory;
         scroll-padding: 24px;
@@ -299,9 +388,47 @@ input {
     }
     
     .scroll-contenedor .item-scroll{
-        flex: 0 0 100%;
+        flex: 0 0 90%;
         padding: 24px;
         border-radius: 8px;
         scroll-snap-align: start;
+    }
+
+    .scroll-button {
+        display: none;
+    }
+
+    .cuadrado-amarillo{
+        background-color: #DE744C;
+        width: 80%;
+        height: 100px;
+        z-index: 0;
+        position: relative;
+        top: -31rem;
+        left: 1.5rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+        border-radius: 8px;
+    }
+
+    .heading-cv{
+        padding-left: 2rem;
+        position: relative;
+        top: 2.3rem;
+        z-index: 2;
+        font-size: 2.5rem;
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+
+    .item-scroll h3{
+        font-size: 1.5rem;
+    }
+    
+    .item-scroll p b{
+        font-size: 1rem;
+    }
+    
+    .item-scroll p{
+        font-size: 1rem;
     }
 }
