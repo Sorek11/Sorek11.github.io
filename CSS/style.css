@@ -34,7 +34,7 @@ body {
     margin-top: -95px;
 }
 
-#nav {
+nav {
     display: flex;
     width: 100%;
     position: sticky;
@@ -44,7 +44,7 @@ body {
 
 
 
-#nav img {
+nav img {
     width: 100px;
     padding: 5px;
     margin-left: 55px;
@@ -56,7 +56,7 @@ nav.green{
 }
 
 
-#nav ul {
+nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -266,12 +266,13 @@ hr {
         justify-content: space-around;
         width: 70%;
         color: white;
-        margin-top: 3rem;
         font-family: 'Barlow', sans-serif;
+        padding-left: 5rem;
     }
 
     .contenido-header h1 {
         font-size: 3rem;
+        margin-top: 8rem;
         text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
     }
 
@@ -298,10 +299,10 @@ hr {
 
 @media (max-width: 767px) { /*PANTALLAS DESDE MOVIL HASTA TABLET*/
     .header {
-        background-position: right;
+        background-position: center;
     }
 
-    nav img {
+    #nav img {
         width: 50px;
         padding: 10px;
         margin-left: 15%;
@@ -316,14 +317,6 @@ hr {
         color: white;
         margin-top: 0rem;
         font-family: 'Barlow', sans-serif;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        list-style: none;
     }
 
     nav ul {
@@ -369,9 +362,16 @@ hr {
       }
 
       input:checked  ~ ul{
-        display:block;
-        top: 35px;
+        display: block;
+        position: fixed;
+        top: 7%;
+        left:65%;
+        background-color:#24a263 ;
+        padding: 5%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.527);
+        border-radius: 5px;
       }
+
 
       .scroll-contenedor{
         display: flex;
@@ -394,9 +394,7 @@ hr {
         scroll-snap-align: start;
     }
 
-    .scroll-button {
-        display: none;
-    }
+    
 
     .cuadrado-amarillo{
         background-color: #DE744C;
