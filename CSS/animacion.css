@@ -228,3 +228,237 @@
         margin-top: 150px;
     }
 }
+
+/***********************************************************************************************************/
+
+
+@media (min-width:1800px){
+    .v{
+        animation: transfor1 2000ms ease-in-out forwards alternate;
+    }
+    
+    @keyframes transfor1 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 26.3%;
+            z-index: 200;
+        }
+        100% {
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 22%;
+            z-index: 0;
+        }
+    }
+
+    .i1 {
+        animation: transfor2 3000ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor2 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 40.9%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 23.8%;
+        }
+    }
+    .c1 {
+        animation: transfor3 3500ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor3 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 87.5%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 25%;
+        }
+    }
+    .t {
+        animation: transfor4 2500ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor4 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 54.5%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 27.5%;
+        }
+    }
+    .o {
+        animation: transfor5 2500ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor5 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 68.8%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 29%;
+        }
+    }
+    .r1 {
+        animation: transfor6 3000ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor6 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 70.5%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 31.5%;
+        }
+    }
+
+    .g {
+        animation: transfor7 2000ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor7 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 37.5%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 34.5%;
+        }
+    }
+
+    .a1 {
+        animation: transfor8 2500ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor8 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 87%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 37.3%;
+        }
+    }
+
+    .r2 {
+        animation: transfor9 3500ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor9 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 53.9%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 39.8%;
+        }
+    }
+
+    .c2 {
+        animation: transfor10 3000ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor10 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 25.5%;
+            z-index: 200;
+            text-transform: capitalize;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 41.6%;
+        }
+    }
+    .i2 {
+        animation: transfor11 2000ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor11 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 73%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 44.3%;
+        }
+    }
+    .a2 {
+        animation: transfor12 3500ms ease-in-out forwards alternate;
+    }
+    @keyframes transfor12 {
+        0% {
+            font-size: 1.2rem ;
+            position: absolute;
+            top: 5.2%;
+            left: 41.3%;
+            z-index: 200;
+        }
+        100%{
+            font-size: 4rem;
+            position: absolute;
+            top: 33%;
+            left: 45.5%;
+        }
+    }
+
+    .contenido-header h2 {
+        margin-top: 150px;
+    }
+}
