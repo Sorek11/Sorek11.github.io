@@ -8,15 +8,17 @@
     <meta name="description" content="Bienvenid@ a mi página web, mi nombre es Víctor García y en esta web podrás conocer un poco más sobre mi, tanto profesionalmente como personalmente.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animacion.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body onresize="checkButtonsNecesity()">
     
-        <nav id="nav">
+        <nav>
             <a class="imagen-nav" href="#"><img src="img/logo-b.png" alt=""></a>
             <input type="checkbox" id="menu">
             <label for="menu"> ☰ </label>
             <ul>
-                <li><a href="#">CV</a></li>
+                <li><a href="#cv">CV</a></li>
                 <li><a href="#">Galería</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Sobre Mi</a></li>
@@ -34,41 +36,15 @@
         </div>
     </header>
     <main>
-        <div class="cv">
-            <h2 class="heading-cv">Curriculum</h2>
-            
-            <div class="scroll-contenedor" id="seccion_scroleable">
-                <div class="item-scroll" id="main_tarjeta">
-                    <h3>Datos Personales</h3>
-                    <hr>
-                    <p><b>Edad: </b>30</p>
-                    <p><b>Residencia: </b>Alcalá de Henares</p>
-                    <p><b>Email: </b><a href="mailto: victor.garciag93@gmail.com">victor.garciag93@gmail.com</a> </p>
-                    <p><b>Teléfono: </b><a href="tel:+34646841347">646841347</a></p>
-                </div>
-                <div class="item-scroll">
-                    <h3>Estudios</h3>
-                    <hr>
-                    <p><b>CFGS Desarrollo de Aplicaciones Web </b> - Universidad Europea de Madrid <sub>(En curso)</sub> </p>
-                    <p><b>Master en Management y Marketing</b> - Universidad de Alcalá</p>
-                    <p><b>Grado en Administración y Dirección de Empresas</b> - Universidad de Alcalá</p>
-                </div>
-                <div class="item-scroll">
-                    <h3>Experiencia</h3>
-                    <hr>
-                    <p> <b>Especialista en Ecommerce</b> - Pantopolium SL (actual)</p>
-                    <p> <b>Community Manager y Gestión Web</b> - Ayto. Alcalá de Henares (1 año)</p>
-                    <p> <b>Técnico en Desarrollo Web, Publicidad y Community Manager</b> - Ayto. Alcalá de Henares (1 año)</p>
-                </div>
+        <section>
+            <div class="cv_video" id="cv">
+                <video src="mp4/CV WEB _ Prezi Video - Brave 2023-02-21 12-36-08.mp4" id="video"></video>
             </div>
-            <div class="cuadrado-amarillo"></div>
-            <section class="botones">
-                <button class="scroll-button" onclick="scrollLeftNx()" id="bLess"><</button>
-                <button class="scroll-button" onclick="scrollRightNx()" id="bMore">></button>
-            </section>
-            
-        </div>
+        </section>
+        
+    
     </main>
+    <!--Espacios para hacer scroll-->
     <div>.</div>
     <div>.</div>
     <div>.</div>
@@ -106,5 +82,6 @@
     <div>.</div>
     <div>.</div>
     <script src="js/script.js"></script>
+    <script src="js/cv.js"></script>
 </body>
 </html>
