@@ -1,0 +1,12 @@
+.cv_video {
+    min-height: 11800px;
+    background-color: #171c22;
+}
+
+video {
+    width: 70%;
+    border: none;
+    position: sticky;
+    top: 20%;
+    left: 10%;
+}
