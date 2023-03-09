@@ -15,11 +15,14 @@
     border-radius: 5px;
 }
 
+
 body {
     margin: 0;
     padding: 0;
     background: radial-gradient(circle, rgba(223,223,223,1) 0%, rgba(249,249,249,1) 46%);
     box-sizing: border-box;
+    background-color: #171C22;
+    
 }
 
 .header {
@@ -245,7 +248,87 @@ input {
     color: #171717;
 }
 
+#galeria h2{
+    font-weight: 1000;
+    font-size: 2rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 5px 5px 5px 15px;
+    margin-left: 15px;
+    color: #171C22;
+}
 
+#galeria p{
+    font-weight: 1000;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 0px 5px 15px 15px;
+    margin-left: 15px;
+    color: #171C22;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 0.3rem;
+    overflow: hidden;
+}
+
+.galeria > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.527);
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0.35s;
+    cursor: pointer;
+}
+
+.galeria a:hover img{
+    filter: brightness(60%);
+    transform: scale(1.3);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+.modal-content {
+  display: block;
+  margin: 10% auto 0 auto;
+  max-width: 60%;
+  max-height: 80%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.close {
+  position: absolute;
+  top: 110px;
+  right: 50px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 
 
@@ -288,6 +371,29 @@ input {
         display: none;
     }
 
+    .modal-content {
+        display: block;
+        margin: 15% auto 0 auto;
+        max-width: 60%;
+        max-height: 80%;
+      }
+      
+      .modal-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+      .close {
+        position: absolute;
+        top: 110px;
+        right: 50px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
 }
 
 @media (max-width: 935px) { /*SOLO PARA LOS BOTONES DE DESPLAZAMIENTO DEL APARTADO CV*/
@@ -295,12 +401,17 @@ input {
         padding: 0 5rem 0 5rem;
     }
 
-   
+    
 
 }
 
 
 @media (max-width: 767px) { /*PANTALLAS DESDE MOVIL HASTA TABLET*/
+
+    #cv {
+        display: none;
+    }
+
     .header {
         background-position: center;
     }
@@ -417,5 +528,38 @@ input {
     
     .item-scroll p{
         font-size: 1rem;
+    }
+
+    .modal-content {
+        display: block;
+        margin: 50% auto 0 auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      
+      .modal-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+      .close {
+        position: absolute;
+        top: 110px;
+        right: 50px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+    .galeria img:nth-child(4) {
+        display: none;
+    }
+    .galeria img:nth-child(9) {
+        display: none;
+    }
+    .galeria img:nth-child(12) {
+        display: none;
     }
 }
