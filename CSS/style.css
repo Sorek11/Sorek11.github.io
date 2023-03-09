@@ -290,9 +290,9 @@ input {
     cursor: pointer;
 }
 
-.galeria a:hover img{
+.galeria img:hover{
     filter: brightness(60%);
-    transform: scale(1.3);
+    transform: scale(1.02);
 }
 
 .modal {
