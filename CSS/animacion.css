@@ -232,7 +232,7 @@
 /***********************************************************************************************************/
 
 
-@media (min-width:1800px){
+@media (min-width:1400px){
     .v{
         animation: transfor1 2000ms ease-in-out forwards alternate;
     }
@@ -248,7 +248,7 @@
         100% {
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 22%;
             z-index: 0;
         }
@@ -268,7 +268,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 23.8%;
         }
     }
@@ -286,7 +286,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 25%;
         }
     }
@@ -304,7 +304,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 27.5%;
         }
     }
@@ -322,7 +322,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 29%;
         }
     }
@@ -340,7 +340,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 31.5%;
         }
     }
@@ -359,7 +359,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 34.5%;
         }
     }
@@ -378,7 +378,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 37.3%;
         }
     }
@@ -397,7 +397,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 39.8%;
         }
     }
@@ -417,7 +417,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 41.6%;
         }
     }
@@ -435,7 +435,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 44.3%;
         }
     }
@@ -453,7 +453,7 @@
         100%{
             font-size: 4rem;
             position: absolute;
-            top: 33%;
+            top: 20%;
             left: 45.5%;
         }
     }
