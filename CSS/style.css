@@ -248,6 +248,8 @@ input {
     color: #171717;
 }
 
+
+
 #galeria h2{
     font-weight: 1000;
     font-size: 2rem;
@@ -409,6 +411,10 @@ input {
 @media (max-width: 767px) { /*PANTALLAS DESDE MOVIL HASTA TABLET*/
 
     #cv {
+        display: none;
+    }
+
+    .boton-cv{
         display: none;
     }
 

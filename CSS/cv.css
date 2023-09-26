@@ -1,3 +1,30 @@
+.contenedor-cv{
+    min-height: 11800px;
+    background-color: #171c22;
+}
+
+.boton-cv{
+    position: sticky;
+    top: 7rem;
+    margin-left: 5px;
+}
+.boton-cv button{
+    width: 8rem;
+    height: 2rem;
+    background-color: #24A263;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.boton-cv a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+
 .cv_video {
     min-height: 11800px;
     background-color: #171c22;
